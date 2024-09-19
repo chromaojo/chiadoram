@@ -1,0 +1,225 @@
+{% extends 'header.html' %}
+{% block start %}
+
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chiadoram Enterprises - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/Edited/Favicon.jpg' %}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' %}"
+    rel="stylesheet">
+
+  <!-- Chroma's Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- THe site's CSS  -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+  <!-- ======= Hero Or Slider Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/Colours.gif' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <br> <span>CHi'ADORAM Enterprises</span></h2>
+              <p class="animate__animated animate__fadeInUp">Sole Manufacturer Of Your First Choiced Paint, With Customers All Around The World...</p>
+              <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/paint2.jpg' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">JEXTOL PAINT</h2>
+              <p class="animate__animated animate__fadeInUp">We believe in ideas that will drive the project we are
+                doing. We don't laugh off team ideas..</p>
+              <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(  {% static 'assets/img/slide/paint3.jpg' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">J E X T O L PAINT</h2>
+              <p class="animate__animated animate__fadeInUp">Adding beauty and protection..</p>
+              <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+    <!-- ======= Company About Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="#">OUR VISION</a></h4>
+              <p>We are a building finishing company aiming to be THE FIRST OPTION for QUALITY and DURABILITY in the
+                paint production and building beautification industry</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="#">OUR MISSION</a></h4>
+              <p>In our quest to achieve, we seek to provide the best service possible to ensure customer's satisfaction
+                by engaging and relating with them based on their specific need.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="#">CORE VALUES</a></h4>
+              <p>Nothing moves us more than making these three primary principles work for you :
+                <b>Integrity -</b> Our promise is our bound <br>
+                <b>Customer Satisfaction -</b> Our customers are the reason why we do what we do, to offer you long
+                lasting and
+                qualitative products and services.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">Prompt Delivery: </a></h4>
+              <p>
+                As a company with a vision to be the first option for quality and durability in the
+                industry, we ensure that our services are excellent and timely. Delay is NOT part of our ETHOS.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="#">Foundational Principles</a></h4>
+              <p>We believe that every customer is different. Hence, we treat each customer's specific need as unique.
+                We believe in excellence. Hence, the quality of products and services is not negotiable.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-calendar4-week"></i>
+              <h4><a href="#">Foundational Principles</a></h4>
+              <p>We believe in relationship and it is the essence of what we do. We create positive and lasting
+                relationship with staff and customers.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4"> <br>
+            <div class="footer-info text-center"> <br>
+              <h3>CHi<b style="color: red;">~ADO</b>RAM</h3>
+              <p>
+                4, Ibukun Oluwa Street,  <br>
+                Ogba, Lagos, <br>Nigeria.<br>
+                <strong>Phone: <a href="tel:+234-803-300-8580"> Click To Call US</a></strong> <br>
+                <strong>SMS:</strong> +234-803-300-8580<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 ">
+            <!-- map section -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.3803677882674!2d3.3365502623115573!3d6.641589840395348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91582e5905c7%3A0x4938ea005ac98320!2s4%20Ibukun%20Oluwa%20Street%2C%20Ojodu%20101232%2C%20Lagos!5e0!3m2!1sen!2sng!4v1656344886828!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Tech & Tunes</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Developed by <a href="#">A-Booker...</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!--  JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

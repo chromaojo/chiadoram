@@ -1,0 +1,138 @@
+{% extends 'header.html' %}
+{% block start %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chiadoram Enterprises - Login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/Edited/Favicon.jpg' %}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' %}"
+    rel="stylesheet">
+
+  <!-- Chroma's Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- THe site's CSS  -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Customer</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>Requests & Complaint </li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Post Message Section ======= -->
+    <div class="container-fluid bg-secondary">
+      <div class="container"> 
+        <div class="row" id="login"> <br>
+          {% for message in messages %} 
+          <b style="color: darkorange;">{{message}}</b>
+          {% endfor %}
+          <div class="col-md-8 my-2 mx-2"> <br>
+            <h5>Customer</h5>
+            <hr>
+            <div class="form">
+              <form action="" method="POST" role="form" class="">
+                {% csrf_token %}
+                <div class="form-group col-lg-8">
+                  <input type="text" name="FullName" class="form-control" id="FullName" placeholder="Name In Full"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                </div> <br>
+                <div class="form-group col-lg-8 mt-3 mt-lg-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Valid Email Address"
+                    data-rule="email" data-msg="Please enter a valid email"> <br>
+                </div>
+                <div class="form-group col-lg-8 mt-3 mt-lg-0">
+                  <input type="number" class="form-control" name="phoneNumber" id="phoneNumber"
+                    placeholder="Your Phone Number" data-rule="email" data-msg="Please enter a valid phone number"
+                    required minlength="8">
+                </div> <br>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required>
+                </div> <br>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message_body" rows="5" placeholder="Message" required></textarea>
+                </div> <br>
+                <div class="text-center">
+                  <button type="submit" title="Send Message" class="btn btn-primary">Send Message</button>
+                </div>
+              </form><br>
+            </div>
+          </div>
+          <div class="col-md-3 my-2 mx-2"><br>
+            {% for message in messages %} 
+          <b style="color: darkorange;">{{message}}</b>
+          {% endfor %}
+            <h3 class="text-light">Customer Section</h3> <hr>
+            <p class="text-light">Requests and Complaint...</p>
+            <hr>
+        </div>
+      </div> <br>
+    </div> 
+  </main><!-- End #main --> <br><br>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Tech & Tunes</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Developed by <a href="#">A-Booker...</a>
+        </div>
+      </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+<!--  JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

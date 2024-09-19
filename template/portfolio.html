@@ -1,0 +1,254 @@
+{% extends 'header.html' %}
+{% block start %}
+
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chiadoram Enterprises - Customer Section</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Edited/Favicon.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Chroma's Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- THe site's CSS  -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Catalogue</h2>
+          <ol>
+            <li><a href="/login">Login</a></li>
+            <li>Wall Catalogue</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Super</li>
+              <li data-filter=".filter-card">Good Delivery</li>
+              <li data-filter=".filter-web">Smoothness</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/IMG-20220516-WA0019.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Interior</h4>
+                <p>Jextol Paint At Work</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/IMG-20220516-WA0019.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/IMG-20220516-WA0020.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Interior Painting Session </h4>
+                <p>Professionals Prefer Jextol Paint </p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/IMG-20220516-WA0020.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/dup2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Wall Painting</h4>
+                <p>Jextol Paint Makes The Difference</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/dup2.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/IMG-20220516-WA0024.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Outdoor Painting</h4>
+                <p>Professionals Prefer Jextol Paint </p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/IMG-20220516-WA0024.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/paaint.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Pro Painters Understand</h4>
+                <p>Our touch of Quality</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/paaint.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/IMG-20220516-WA0025.jpg' %}" class="img-fluid"
+                alt="chiadoram wall">
+              <div class="portfolio-info">
+                <h4>PAining Contractor's Project</h4>
+                <p>Jextol Paint At Work</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/IMG-20220516-WA0025.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/IMG-20220516-WA0026.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Jextol Paint</h4>
+                <p>A touch of Quality</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/IMG-20220516-WA0026.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/IMG-20220516-WA0021.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Difference Is Clear</h4>
+                <p>A touch of Quality</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/IMG-20220516-WA0021.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Edited/dup1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Super Delivery</h4>
+                <p>Professionals Prefer Jextol Paint </p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Edited/dup1.jpg' %}" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- Customer care section  -->
+  <div class="container-fluid bg-secondary" id="customer"> <br>
+    <div class="container">
+      <h2 class="text-light text-center" style="text-shadow: 2px 2px red ;">Customer Care</h2><br>
+    </div>
+  </div> <br> <br>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top"> <br>
+     
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Tech & Tunes</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Developed by <a href="#">A-Booker...</a>
+        </div>
+      </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!--  JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}
